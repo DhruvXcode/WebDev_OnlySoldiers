@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySoldiers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="home-btn">Home</a></li>
+                <li><a href="#" class="about-btn">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="homeSection">
+        <div class="hero-content">
+            <h1>Achieve Your Fitness Goals</h1>
+            <p>Join our fitness community and start your transformation today!</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section (Hidden initially) -->
+    <section class="about" id="aboutSection" style="display: none;">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>We are a platform dedicated to helping people achieve their fitness goals by providing personalized workout plans, expert advice, and a supportive community.</p>
+            <p>Our mission is to make fitness accessible and enjoyable for everyone, whether you're just starting or looking to level up your routine!</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200/0000FF/808080?Text=Fitness1" alt="Fitness 1">
+            <h2>Personalized Plans</h2>
+            <p>Receive a fitness plan tailored just for you based on your goals.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200/FF6347/FFFFFF?Text=Fitness2" alt="Fitness 2">
+            <h2>Expert Trainers</h2>
+            <p>Learn from certified trainers who will guide you every step of the way.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200/32CD32/FFFFFF?Text=Fitness3" alt="Fitness 3">
+            <h2>Track Your Progress</h2>
+            <p>Keep track of your workouts and see your improvements over time.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fitness Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
