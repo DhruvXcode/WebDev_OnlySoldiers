@@ -3,71 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnlySoldiers</title>
+    <title>Login & Registration</title>
+    <link rel="icon" href="assets/OS_Logo_Demo1.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="home-btn">Home</a></li>
-                <li><a href="#" class="about-btn">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="login-btn">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section class="hero" id="homeSection">
-        <div class="hero-content">
-            <h1>Achieve Your Fitness Goals</h1>
-            <p>Join our fitness community and start your transformation today!</p>
-            <a href="#" class="cta-button">Get Started</a>
+    <div class="container">
+        <!-- Left Section with Logo -->
+        <div class="left-section">
+            <img src="assets/OS Official Logo (white).png" alt="Logo">
         </div>
-    </section>
 
-    <!-- About Section (Hidden initially) -->
-    <section class="about" id="aboutSection" style="display: none;">
-        <div class="about-content">
-            <h1>About Us</h1>
-            <p>We are a platform dedicated to helping people achieve their fitness goals by providing personalized workout plans, expert advice, and a supportive community.</p>
-            <p>Our mission is to make fitness accessible and enjoyable for everyone, whether you're just starting or looking to level up your routine!</p>
-        </div>
-    </section>
+        <!-- Right Section with Login Box -->
+        <div class="right-section">
+            <!-- Updated Headings -->
+            <div class="heading">
+                <h3 class="small-heading">Here</h3>
+                <h1 class="large-heading">Transformation Begins...</h1>
+            </div>
+            <div id="form-container" class="form-container">
+                <!-- Login Form -->
+                <div id="login-form" class="form">
+                    <form action="/login" method="POST">
+                        <input type="text" id="username" name="username" placeholder="Username or Email" required>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <button type="submit">Log In</button>
+                    </form>
+                    <!-- Google Login Button -->
+                    <button class="google-login">Log in with Google</button>
+                    <!-- Terms & Conditions -->
+                    <div class="terms">
+                        <p>By logging in, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                    </div>
+                    <p class="switch-form">Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Sign up</a></p>
+                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+                </div>
 
-    <section class="features">
-        <div class="feature">
-            <img src="https://via.placeholder.com/300x200/0000FF/808080?Text=Fitness1" alt="Fitness 1">
-            <h2>Personalized Plans</h2>
-            <p>Receive a fitness plan tailored just for you based on your goals.</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300x200/FF6347/FFFFFF?Text=Fitness2" alt="Fitness 2">
-            <h2>Expert Trainers</h2>
-            <p>Learn from certified trainers who will guide you every step of the way.</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300x200/32CD32/FFFFFF?Text=Fitness3" alt="Fitness 3">
-            <h2>Track Your Progress</h2>
-            <p>Keep track of your workouts and see your improvements over time.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Fitness Platform. All rights reserved.</p>
-    </footer>
-
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Login</h2>
-            <form>
-                <input type="text" placeholder="Username" required><br>
-                <input type="password" placeholder="Password" required><br>
-                <button type="submit">Login</button>
-            </form>
+                <!-- Sign Up Form (Initially Hidden) -->
+                <div id="signup-form" class="form" style="display: none;">
+                    <form action="/signup" method="POST">
+                        <input type="text" id="signup-username" name="username" placeholder="Username" required>
+                        <input type="email" id="signup-email" name="email" placeholder="Email" required>
+                        <input type="password" id="signup-password" name="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <!-- Google Sign Up Button -->
+                    <button class="google-login">Sign up with Google</button>
+                    <p class="switch-form">Already have an account? <a href="javascript:void(0);" onclick="toggleForm()">Log in</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
